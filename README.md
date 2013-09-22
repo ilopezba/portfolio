@@ -15,8 +15,12 @@ Each page contains sections. For example:
 
 *You can create your own structure with the django admin panel*
 
+This structure is also applied to the 'Shop'.
+
 <h2>Content:</h2><br>
 Each section can contain different kinds of 'art'. The main type of content (the one that is currently implemented) is 'Images'.
 But an 'Image' is more complex than you may think, because each Image contains one or more 'Image Versions'. This way you can 
 upload a black and white version of the original photo without creating a new 'Image' object that has no relationship with the 
 original photo.
+
+You can choose wich 'Images' will be available in the shop so that users can buy them. 
