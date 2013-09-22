@@ -2,3 +2,6 @@
 *.pot
 *.pyc
 local_settings.py
+/media/uploads/images/*
+/media/uploads/previews/*
+/media/uploads/thumbnails/*
