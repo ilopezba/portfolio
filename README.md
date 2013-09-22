@@ -4,7 +4,7 @@ portfolio
 **A django portfolio for artists that want to show and sell their work**
 
 
-Structure:<br>
+<h2>Structure:</h2><br>
 The portfolio has 'pages'. Pages can be shown in the menu.
 Each page contains sections. For example:
  - _Page_ **Photography**<br>
@@ -15,7 +15,7 @@ Each page contains sections. For example:
 
 *You can create your own structure with the django admin panel*
 
-Content:<br>
+<h2>Content:</h2><br>
 Each section can contain different kinds of 'art'. The main type of content (the one that is currently implemented) is 'Images'.
 But an 'Image' is more complex than you may think, because each Image contains one or more 'Image Versions'. This way you can 
 upload a black and white version of the original photo without creating a new 'Image' object that has no relationship with the 
