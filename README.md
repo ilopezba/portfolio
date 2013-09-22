@@ -24,3 +24,6 @@ upload a black and white version of the original photo without creating a new 'I
 original photo.
 
 You can choose wich 'Images' will be available in the shop so that users can buy them. 
+
+
+More content types can be added (t-shirts? paintings?) if needed.
