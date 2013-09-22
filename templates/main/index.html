@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+<ul class="nav nav-justified">
+    <li class="active"><a href="/">Home</a></li>
+    {% for page in pages %}
+        <li><a href="/portfolio/{{ page.slug }}">{{ page.name_en }}</a></li>
+    {% endfor %}
+    <li><a href="#">Contact</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+    <div class="row-fluid">
+      <h1>Index</h1>
+    </div>
+{% endblock %}

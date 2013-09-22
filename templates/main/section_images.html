@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block nav %}
+<ul class="nav nav-justified">
+    <li><a href="/">Home</a></li>
+    {% for page in pages %}
+        {% if page == currentPage %}
+            <li class="active"><a href="/portfolio/{{ page.slug }}">{{ page.name_en }}</a></li>
+        {% else %}
+            <li><a href="/portfolio/{{ page.slug }}">{{ page.name_en }}</a></li>
+        {% endif %}
+    {% endfor %}
+    <li><a href="#">Contact</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
+    <div class="row-fluid">
+        <h2><a href="{{ section.slug }}">{{ section.name_en }}</a></h2>
+        {% for image in section.images %}
+            {% if forloop.counter0|divisibleby:6 %}
+                <div class="row">
+            {% endif %}
+                <a href="{{ image.slug }}">
+                    <div class="col-md-2"><img src="/media/{{ image.preview }}" alt="{{ image.title_en }}" class="img-thumbnail img-responsive"></div>
+                </a>
+            {% if forloop.last %}
+                </div>
+            {% elif forloop.counter|divisibleby:6 %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block breadcrumb %}
+    <ol class="breadcrumb">
+      <li><a href="/portfolio/{{ currentPage.slug }}">{{ currentPage.name_en }}</a></li>
+      <li class="active">{{ section.name_en }}</li>
+    </ol>
+{% endblock %}
