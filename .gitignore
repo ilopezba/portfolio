@@ -2,6 +2,8 @@
 *.pot
 *.pyc
 local_settings.py
+database.sqlite3
 /media/uploads/images/*
 /media/uploads/previews/*
 /media/uploads/thumbnails/*
+notas.txt
