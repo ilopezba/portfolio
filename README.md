@@ -1,8 +1,8 @@
 portfolio
 =========
 
-**A django portfolio for artists that want to show and sell their work**
-_This Project is under development. If you have any ideas or things you want me to add to the project you are welcome, send me an email: salvatore[_at_]universojuegos.es_
+**A django portfolio for artists that want to show and sell their work**<br>
+_This Project is under development. If you have any ideas or things you want me to add to the project you are welcome, send me an email: salvatore[:at:]universojuegos.es_
 
 
 <h2>Structure:</h2><br>
