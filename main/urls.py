@@ -11,4 +11,6 @@ urlpatterns = patterns('',
     url(r'^(?P<pageslug>[-\w]+)/(?P<sectionslug>[-\w]+)/$', views.section, name='section'),
     # /page-slug/section-slug/item-slug
     url(r'^(?P<pageslug>[-\w]+)/(?P<sectionslug>[-\w]+)/(?P<itemslug>[-\w]+)/$', views.item, name='item'),
+    # /download/page-slug/section-slug/item-slug
+    url(r'^download/(?P<pageslug>[-\w]+)/(?P<sectionslug>[-\w]+)/(?P<itemslug>[-\w]+)/(?P<versionid>\d+)/$', views.download, name='download'),
 )

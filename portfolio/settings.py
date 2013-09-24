@@ -14,7 +14,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/home/salvatore/PycharmProjects/portfolio/database.sqlite3',                      # Or path to database file if using sqlite3.
+        'NAME': '/home/salvatore/git/portfolio/database.sqlite3',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -53,7 +53,7 @@ USE_TZ = True
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
 #MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'media/')
-MEDIA_ROOT = '/home/salvatore/PycharmProjects/portfolio/media/'
+MEDIA_ROOT = '/home/salvatore/git/portfolio/media/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
