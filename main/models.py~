@@ -122,4 +122,3 @@ class ImageVersion(models.Model):
 
         super(ImageVersion, self).save(*args, **kwargs)
         # TODO mover la imagen original a una carpeta protegida si se va a vender!
-
